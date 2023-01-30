@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <!-- Description du contenue du site-->
+  <meta name="description" content="Vente en ligne de CD de tous les annimes" />
+  <!-- pour indiquer aux navigateurs comment ajuster la mise en page de ,cette page sur les appareils mobiles -->
+  <!-- pour indiquer les mots-clés associés à ma page  -->
+  <meta name="keywords" content="CD, musique, vente en ligne" />
+  <title>Projet Php</title>
+  <link rel="stylesheet" type="text/css" href="style.css"> <!-- On charge le framework Bootstrap -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+<body>
+	<h1>Finalisation de l'achat</h1>
+	  <main class="site-main">
+	<form method="post" action="finaliserCommande.php">
+	 	<label for="card_number">Numéro de carte :</label>
+	  	<input type="text" id="card_number" name="card_number" required placeholder="exp : 1234123412341234">
+	  <br>
+	  	<label for="expiration_date">Date d'expiration :</label>
+	  	<input type="text" id="expiration_date" name="expiration_date" placeholder="exp :05/2023" required>
+	  <br>
+	  	<label for="cvv">CVV :</label>
+	  	<input type="text" id="cvv" name="cvv" required>
+	  <br>
+	  <input class="button" type="submit" value="Finaliser l'achat">
+	</form>
+</main>
+</body>
+</html>
+  

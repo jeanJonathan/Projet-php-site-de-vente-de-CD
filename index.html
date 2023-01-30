@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <!-- Description du contenue du site-->
+  <meta name="description" content="Vente en ligne de CD de tous les annimes" />
+  <!-- pour indiquer aux navigateurs comment ajuster la mise en page de ,cette page sur les appareils mobiles -->
+  <!-- pour indiquer les mots-clés associés à ma page  -->
+  <meta name="keywords" content="CD, musique, vente en ligne" />
+  <title>Projet Php</title>
+  <link rel="stylesheet" type="text/css" href="style.css"> <!-- On charge le framework Bootstrap -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="#" class="site-logo">
+        <img width="100" height="258" alt="Vente de CD" src=https://upload.wikimedia.org/wikipedia/commons/f/f3/CD_icon.svg>
+      </a>
+      <ul>
+      </ul>
+      <!-- Formulaire de recherche -->
+      <!-- pour le formulaire method="get" action="#" role="search" -->
+      <form method="get" action="recherche.php" class="site-search" >
+        <input class="search-input" type="text" name="search-bar" placeholder="Rechercher titre ou auteur ex: One piece" aria-label="Que recherchez-vous ?" id="search-bar">
+      </form>
+          <!--   <a href="lePanier.php" class="">
+      <img width="30" height="30" src="https://cdn-icons-png.flaticon.com/512/118/118089.png" alt="Panier"> -->
+    </a>
+    </div>
+  </header>
+  <main class="site-main">
+    <!-- Section des informations sur le CD -->
+    <section class="cd-section">
+      <!-- <h1 class="cd-section-title">Bienvenue !</h1> -->
+      <div class="cd-image"> 
+        <figure>
+          <img alt="''" src="https://m.media-amazon.com/images/I/61XILypAAUS._AC_SY445_.jpg">
+         <!--  <a alt="#" onclick= "return true;" href="panier.php">
+            <input class="button" type="submit" name="Ajouter au panier" value="Ajouter au panier">
+          </a> -->
+        </figure>
+     <form method="post" action="panier.php">
+          <input type="hidden" name="idCd" value="6">
+          <input class="button" type="submit" name="Ajouter au panier" value="Ajouter au panier">
+        </form> 
+      </div>
+      <!-- Bouton d'ajout au panier -->
+      <div class="cd-cta-section">  
+        <hr>
+        <!-- Bouton d'ajout au panier -->
+       <!--  <div class="cd-cta-button">
+          <button class="button">Ajouter au panier</button>
+        </div> -->
+      </div>
+
+    </section>
+    <!-- Section des détails du CD -->
+    <section class="cd-details-section">
+      <h2 class="cd-details-title">Boruto : Naruto Next Generations-Vol. 5</h2>
+      <div class="cd-details-section">
+        <h3 class="cd-details-label">Realisateur(s) :</h3>
+        <p class="cd-details-text">Noriyuki Abe</p>
+      </div>
+      <div class="cd-details-section">
+        <h3 class="cd-details-label">Genre(s) :</h3>
+        <p class="cd-details-text">Schonen</p>
+      </div>
+      <div class="cd-details-section">
+        <h3 class="cd-details-label">Prix :</h3>
+        <p class="cd-details-text">27,48 $</p>
+      </div>
+    </section>
+    </div>
+  </main>
+  <!-- Pied de page -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer-inner">
+        <div class="footer-section">
+          <h3 class="footer-section-title">A propos</h3>
+          <ul class="footer-section-list">
+            <li><a href="#">Qui sommes-nous</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <!-- Titre de la section -->
+          <h3 class="footer-section-title">Aide</h3>
+          <!-- Liste des liens -->
+          <ul class="footer-section-list">
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Livraison</a></li>
+            <li><a href="#">Retours</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3 class="footer-section-title">Informations</h3>
+          <ul class="footer-section-list">
+            <li><a href="#">Mentions légales</a></li>
+            <li><a href="#">Politique de confidentialité</a></li>
+            <li><a href="#">Conditions d'utilisation</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="site-copyright">
+      <p>Copyright © 2022 Vente de CD. Tous droits réservés. - Projet Php</p>
+    </div>
+  </footer>
+
+  <!-- On charge jQuery et Bootstrap (requis par Bootstrap) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>
+
+<!-- On charge le script JavaScript personnalisé ici -->
+<script src="script.js"></script>
+</body>
+</html>

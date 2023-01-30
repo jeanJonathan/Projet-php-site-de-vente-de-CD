@@ -1,0 +1,140 @@
+header.site-header {
+/*  pour fixé en place et ne bougera pas lorsque la page sera scrolée.*/
+/*   position: fixed; */
+/*  Pour placé tout en haut de la page.*/
+   top: 0;
+/* Pour placé tout à gauche de la page. */
+   left: 0;
+/*  Pouro faire occuper toute la largeur de la page */
+   width: 100%;
+/*   Pour placer l'element au premier plan et se superposera à tous les autres éléments de la page*/
+   z-index: 1;
+   background-color: #3EBCA5;
+}
+
+/* Mise en forme du bouton de recherche */
+.search-input {
+   border-radius: 20px; /* Rayon des coins arrondis */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.site-header {
+  display: flex;
+  align-items: center;
+
+  padding: 20px;
+}
+
+.site-logo {
+  display: inline-block;
+}
+
+.site-logo img {
+  height: 40px;
+  vertical-align: middle;
+}
+
+.site-search {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.search-input {
+  border: none;
+  font-size: 16px;
+  padding: 8px;
+  border-radius: 4px;
+  width: 300px;
+}
+
+.site-main {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.cd-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 20px;
+}
+
+.cd-image {
+  margin-bottom: 20px;
+}
+
+.cd-image img {
+
+}
+
+.cd-cta-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cd-cta-title {
+  margin-bottom: 10px;
+}
+
+.button {
+  background-color: #D3CE29;
+  color: #fff;
+  font-size: 15px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cd-details-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  flex-direction: column;
+}
+
+.cd-details-label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.cd-details-text {
+  font-size: 16px;
+}
+
+/* Règles de style pour les écrans de petite taille (moins de 600px de large) */
+@media (max-width: 600px) {
+  /* Mise en page de l'en-tête du site */
+  .site-header {
+    flex-direction: column;
+  }
+  .site-logo {
+    margin-bottom: 20px;
+  }
+
+  /* Masquer le formulaire de recherche sur les écrans de petite taille */
+  .site-search {
+    display: none;
+  }
+}
+
+.site-footer-inner{
+  display : grid;
+  grid-template-columns: auto auto auto;
+}
+
+
